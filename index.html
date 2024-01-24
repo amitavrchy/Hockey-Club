@@ -23,7 +23,7 @@
     </script>
 </head>
 <body class="font-['Manrope',sans-serif] text-black">
-    <header class="w-4/5 mx-auto">
+    <header class="w-4/5 mx-auto mt-5">
         <div class="navbar">
             <div class="navbar-start">
               <div class="dropdown">
@@ -60,7 +60,7 @@
             <div class="carousel w-full h-[200px] lg:h-[500px] rounded-lg">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="./Images/1.png" class="w-full" />
-                  <div class="absolute flex transform -translate-y-1/2 left-5 right-5 bottom-0 space-x-2">
+                  <div class="absolute flex transform -translate-y-1/2 left-[40%] lg:left-5 lg:right-5 bottom-0 space-x-2">
                     <a href="#slide3" class="btn btn-circle">❮</a> 
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section class="program">
+        <section class="program border-t-2 border-dotted py-10">
           <div class="text-center my-16">
             <h3 class="text-3xl font-bold">Program Section</h3>
             <p class="text-[#0D0D1299] my-1">Let's introduce to our programs and find the best match for you.</p>
@@ -151,7 +151,7 @@
             </div>
           </div>
         </section>
-        <section class="products">
+        <section class="products border-t-2 py-10 border-dotted">
           <div class="text-center my-16">
             <h3 class="text-3xl font-bold">Our New Products</h3>
             <p class="text-[#0D0D1299] my-1">Let's introduce to our products, which will make your life beautiful</p>
@@ -327,7 +327,7 @@
             </div>
           </div>
         </section>
-        <section class="faq">
+        <section class="faq border-t-2 border-dotted py-10">
           <div class="text-center my-16">
             <h3 class="text-3xl font-bold">Frequently Asked Questions</h3>
             <p class="text-[#0D0D1299] my-1">Let's know the answer which question we face Frequently!</p>
@@ -392,7 +392,7 @@
             </div>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact border-t-2 border-dotted py-10">
           <div class="text-center my-16">
             <h3 class="text-3xl font-bold">Get In Touch</h3>
             <p class="text-[#0D0D1299] my-1">Feel free to contact us, send us a message!</p>
@@ -469,7 +469,7 @@
               </div>
             </div>
           </div>
-          <div class="social bg-[#13131808] flex flex-row justify-center items-center w-full h-32 rounded-xl my-10 gap-5">
+          <div class="social bg-[#13131808] flex flex-col justify-center items-center w-full h-32 rounded-xl my-10 gap-5">
             <p class="font-bold text-2xl">Social Media</p>
             <div class="icons flex gap-5">
               <i class="text-xl fa-brands fa-facebook-f"></i>
@@ -480,31 +480,43 @@
           </div>
         </section>
     </main>
-    <footer class="footer p-10 bg-base-200 text-base-content">
+    <footer class="footer p-10 bg-base-200 text-base-content flex flex-col lg:flex-row justify-center lg:justify-around items-center">
       <aside>
-        <h3>Get in Touch</h3>
-        <p>We are available for you from dawn to dusk.</p>
-        <div></div>
-      </aside> 
+        <h3 class="text-2xl text-white text-center">Get in Touch</h3>
+        <p class="text-center">We are available for you from dawn to dusk.</p>
+        <div class="flex gap-5 mt-5">
+          <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+          <p>amitav.rchy@gmail.com</p>
+        </div>
+        <div class="flex gap-5">
+          <i class="fa-solid fa-phone text-[#FF4240]"></i>
+          <p class="">01779926050</p>
+        </div>
+      </aside>  
+      <div class="flex gap-20 lg:gap-40 lg:justify-between">
+        <nav class="flex flex-col gap-1">
+          <header class="footer-title text-white mb-3">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Careers</a>
+          <a class="link link-hover">Legal Notice</a>
+          <a class="link link-hover">News and Articles</a>
+        </nav> 
+        <nav class="flex flex-col gap-1">
+          <header class="footer-title text-white mb-3">Support</header> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+      </div>
       <nav>
-        <header class="footer-title">Services</header> 
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav> 
-      <nav>
-        <header class="footer-title">Company</header> 
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav> 
-      <nav>
-        <header class="footer-title">Legal</header> 
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
+        <header class="footer-title text-white mb-3">Services</header> 
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockeys for Kid</a>
+        <a class="link link-hover">Hockeys for Adult</a>
       </nav>
     </footer>
 </body>
